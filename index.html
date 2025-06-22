@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>🚜 Colheita e Entrega</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <div id="tela-inicial">
+    <h1>🚜 Colheita e Entrega</h1>
+    <p>Fortalecendo a conexão entre o campo e a cidade</p>
+    <button id="btnIniciar">Iniciar Jogo</button>
+  </div>
+
+  <div id="jogo" style="display: none;">
+    <div id="hud">
+      <div>Pontuação: <span id="score">0</span></div>
+      <div>Combustível: <span id="fuel">100</span>%</div>
+      <div>Tempo: <span id="timer">60</span>s</div>
+      <button id="btnVolume">🔊</button>
+    </div>
+    <canvas id="gameCanvas" width="800" height="500"></canvas>
+  </div>
+
+  <audio id="musicaFundo" loop>
+    <source src="<source src="sons-e-efeitos-sonoros-do-super-mario-bros.mp3" type="audio/mp3">" type="audio/mp3">
+  </audio>
+
+  <script src="script.js"></script>
+</body>
+</html>
